@@ -26,4 +26,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Route::resource('articles', ArticleController::class);
 Route::resource('articles', 'App\Http\Controllers\ArticleController');
-
+//Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf'])->name('cetak_pdf');
+Route::get('/article/cetak_pdf', 'ArticleController@cetak_pdf');
