@@ -26,4 +26,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Route::resource('articles', ArticleController::class);
 Route::resource('articles', 'App\Http\Controllers\ArticleController');
-//Route::get('/articles', [App\Http\Controllers\ArticleController::class, 'create'])->name('articles.create');
+
